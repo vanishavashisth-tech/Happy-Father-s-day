@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A beautiful Father's Day celebration website with heartwarming photos, quotes, and an interactive greeting card."/>
+  <title>Happy Father's Day ❤️</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating Particles Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">Dad's Day 💛</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#love">Why Dad</a></li>
+      <li><a href="#spotlight">Our Photos</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#card">Send Card</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">June 15 · A Day of Love</span>
+      <h1 class="hero-title">Happy Father's<br/>Day ❤️</h1>
+      <p class="hero-sub">Thank you for your endless love, unwavering support, and countless sacrifices. You are our greatest hero.</p>
+      <a href="#card" class="btn-primary">Send Wishes →</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── WHY DAD CARDS ── -->
+  <section class="love-section" id="love">
+    <span class="section-label">Why We Celebrate</span>
+    <h2 class="section-title fade-in">Every Day With You Is a Gift</h2>
+    <p class="section-sub fade-in">Fathers shape the very foundation of who we are. Here's to the man who gave us everything.</p>
+    <div class="love-grid">
+      <div class="love-card fade-in"><div class="love-icon">🛡️</div><h3>Our Protector</h3><p>Through every storm and challenge, you stood like a fortress — steady, strong, and never wavering.</p></div>
+      <div class="love-card fade-in"><div class="love-icon">🌟</div><h3>Our Guide</h3><p>Your wisdom has been our compass, pointing us toward the right path even when we couldn't see it.</p></div>
+      <div class="love-card fade-in"><div class="love-icon">❤️</div><h3>Endless Love</h3><p>A love that asks for nothing and gives everything — that is the quiet miracle of a father's heart.</p></div>
+      <div class="love-card fade-in"><div class="love-icon">🎓</div><h3>Our Teacher</h3><p>The lessons you taught without textbooks — about dignity, persistence, and kindness — we carry everywhere.</p></div>
+      <div class="love-card fade-in"><div class="love-icon">😄</div><h3>Our Joy</h3><p>Your laughter is the soundtrack of our childhood. Your smile makes every ordinary day feel special.</p></div>
+      <div class="love-card fade-in"><div class="love-icon">🏠</div><h3>Our Home</h3><p>Home isn't always a place — it's the feeling of your presence, the warmth that follows you everywhere.</p></div>
+    </div>
+  </section>
+
+  <!-- ── SPOTLIGHT: REAL PHOTOS ── -->
+  <section class="spotlight-section" id="spotlight">
+    <span class="section-label">Our Story</span>
+    <h2 class="section-title fade-in">The Man. The Moment. The Memory.</h2>
+    <p class="section-sub fade-in">Real photos, real love. Every picture tells the story of a father who gives his all.</p>
+    <div class="spotlight-grid">
+      <div class="spotlight-card fade-in">
+        <img src="assets/images/dad-portrait.png" alt="Dad portrait" loading="lazy"/>
+        <div class="spotlight-caption">
+          <div class="caption-title">Our Amazing Dad</div>
+          <div class="caption-sub">Strong, kind, and endlessly wonderful 💛</div>
+        </div>
+      </div>
+      <div class="spotlight-card fade-in">
+        <img src="assets/images/dad-daughter-home.png" alt="Dad and daughter at home" loading="lazy"/>
+        <div class="spotlight-caption">
+          <div class="caption-title">Together Forever</div>
+          <div class="caption-sub">The bond that time can never break ❤️</div>
+        </div>
+      </div>
+      <div class="spotlight-card fade-in">
+        <img src="assets/images/dad-daughter-night.png" alt="Dad and daughter night out" loading="lazy"/>
+        <div class="spotlight-caption">
+          <div class="caption-title">A Night to Remember</div>
+          <div class="caption-sub">Making memories under the stars 🌙</div>
+        </div>
+      </div>
+      <div class="spotlight-card fade-in">
+        <img src="assets/images/dad-temple.png" alt="Dad exploring monument" loading="lazy"/>
+        <div class="spotlight-caption">
+          <div class="caption-title">Exploring the World</div>
+          <div class="caption-sub">Always an adventure with you 🌏</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── QUOTE ── -->
+  <section class="quote-section">
+    <div class="quote-content fade-in">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">A father is neither an anchor to hold us back nor a sail to take us there, but a guiding light whose love shows us the way.</p>
+      <span class="quote-author">— The language of every child's heart</span>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="gallery-section" id="gallery">
+    <span class="section-label">Memories</span>
+    <h2 class="section-title fade-in">Frames of Fatherhood</h2>
+    <p class="section-sub fade-in">Click any photo to view it in full.</p>
+    <div class="masonry">
+      <div class="masonry-item fade-in" onclick="openLightbox('assets/images/dad-daughter-home.png','Together, Always ❤️')">
+        <img src="assets/images/dad-daughter-home.png" alt="Together at home" loading="lazy"/>
+        <div class="overlay-caption"><span>Together, Always ❤️</span></div>
+      </div>
+      <div class="masonry-item fade-in" onclick="openLightbox('assets/images/dad-portrait.png','Our Superhero 🌟')">
+        <img src="assets/images/dad-portrait.png" alt="Dad portrait" loading="lazy"/>
+        <div class="overlay-caption"><span>Our Superhero 🌟</span></div>
+      </div>
+      <div class="masonry-item fade-in" onclick="openLightbox('assets/images/dad-daughter-night.png','A Night to Remember 🌙')">
+        <img src="assets/images/dad-daughter-night.png" alt="Night outing" loading="lazy"/>
+        <div class="overlay-caption"><span>A Night to Remember 🌙</span></div>
+      </div>
+      <div class="masonry-item fade-in" onclick="openLightbox('assets/images/dad-temple.png','Exploring the World 🌏')">
+        <img src="assets/images/dad-temple.png" alt="Temple visit" loading="lazy"/>
+        <div class="overlay-caption"><span>Exploring the World 🌏</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt=""/>
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ── GREETING CARD ── -->
+  <section class="card-section" id="card">
+    <span class="section-label">Make It Personal</span>
+    <h2 class="section-title fade-in">Write Your Own Wish</h2>
+    <p class="section-sub fade-in">Craft a heartfelt message and see it come alive in a beautiful card.</p>
+    <div class="card-builder fade-in">
+      <div class="card-preview">
+        <div class="card-decorations">
+          <span class="card-deco" style="top:10%;left:10%;">✨</span>
+          <span class="card-deco" style="top:15%;right:12%;animation-delay:1.5s">💛</span>
+          <span class="card-deco" style="bottom:18%;left:8%;animation-delay:3s">🌟</span>
+          <span class="card-deco" style="bottom:12%;right:10%;animation-delay:1s">❤️</span>
+        </div>
+        <div class="card-illustration">👨‍👧</div>
+        <div class="card-to">To the world's greatest</div>
+        <div class="card-headline" id="preview-name">Dad</div>
+        <div class="card-message-display" id="preview-msg">Your message will appear here, written with all the love your heart holds…</div>
+        <div class="card-from-display" id="preview-from">— With love, Your Child</div>
+      </div>
+      <div class="card-inputs">
+        <div class="input-group">
+          <label>Dad's Name</label>
+          <input type="text" id="input-name" placeholder="e.g. Papa, Baba, Dad…" oninput="updateCard()"/>
+        </div>
+        <div class="input-group">
+          <label>Your Message</label>
+          <textarea id="input-msg" placeholder="Write something beautiful from your heart…" oninput="updateCard()"></textarea>
+        </div>
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" id="input-from" placeholder="e.g. Your loving daughter…" oninput="updateCard()"/>
+        </div>
+        <button class="btn-gold" onclick="shareCard()">🎁 Share This Card</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COUNTDOWN ── -->
+  <section class="countdown-section">
+    <span class="section-label">Counting Moments</span>
+    <h2 class="section-title fade-in">Every Second With Him Counts</h2>
+    <div class="countdown-wrap fade-in" id="countdown"></div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">Happy Father's Day</div>
+    <p class="footer-text">Made with <span class="footer-heart">❤️</span> to celebrate every amazing father.<br/>To all the dads who never gave up — this day is yours.</p>
+    <div class="footer-links">
+      <a href="#love">Why Dad</a>
+      <a href="#spotlight">Our Photos</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#card">Send Card</a>
+    </div>
+    <p class="footer-copy">© 2025 Happy Father's Day · MIT License</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
